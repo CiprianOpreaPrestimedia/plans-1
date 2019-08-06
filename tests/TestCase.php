@@ -16,7 +16,7 @@ abstract class TestCase extends Orchestra
 {
     protected $invalidStripeToken = 'tok_chargeDeclinedInsufficientFunds';
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

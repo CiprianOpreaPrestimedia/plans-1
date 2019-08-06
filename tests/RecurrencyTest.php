@@ -10,7 +10,7 @@ class RecurrencyTest extends TestCase
     protected $plan;
     protected $newPlan;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
