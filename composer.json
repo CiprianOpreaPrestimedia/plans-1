@@ -1,0 +1,57 @@
+{
+    "name": "iProp/plans",
+    "description": "Laravel Plans is a package for SaaS apps that need management over plans, features, subscriptions, events for plans or limited, countable features.",
+    "keywords": [
+        "eloquent",
+        "laravel",
+        "subscription",
+        "plan",
+        "plans",
+        "model",
+        "saas"
+    ],
+    "homepage": "https://github.com/iprop/plans",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Suhendra",
+            "email": "sayasuhendra@gmail.com",
+            "homepage": "https://github.com/iprop/plans",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.8.0",
+        "laravel/framework": "5.8.*",
+        "stripe/stripe-php": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2|^7.0",
+        "orchestra/testbench": "~3.5.0|~3.6.0",
+        "orchestra/database": "~3.5.0|~3.6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Iprop\\Plans\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Iprop\\Plans\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Iprop\\Plans\\PlansServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
