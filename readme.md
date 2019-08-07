@@ -331,6 +331,62 @@ $user->withStripe()->withStripeToken('tok_...')->chargeForLastDueSubscription();
 
 For this method, `\Iprop\Plans\Events\Stripe\DueSubscriptionChargeSuccess` and `\Iprop\Plans\Events\Stripe\DueSubscriptionChargeFailed` are thrown on succesful charge or failed charge.
 
+# Model Extends
+
+You can extend Plan models as well
+
+**note** `$table`, `$fillable`, `$cast`, `Relationships` will be inherit
+
+## PlanModel
+```php
+<?php
+namespace App\Models;
+use Rennokki\Plans\Models\PlanModel;
+class Plan extends PlanModel {
+    //
+}
+```
+
+## PlanFeatureModel
+```php
+<?php
+namespace App\Models;
+use Rennokki\Plans\Models\PlanFeatureModel;
+class PlanFeature extends PlanFeatureModel {
+    //
+}
+```
+
+## PlanSubscriptionModel
+```php
+<?php
+namespace App\Models;
+use Rennokki\Plans\Models\PlanSubscriptionModel;
+class PlanSubscription extends PlanSubscriptionModel {
+    //
+}
+```
+
+## PlanSubscriptionUsageModel
+```php
+<?php
+namespace App\Models;
+use Rennokki\Plans\Models\PlanSubscriptionUsageModel;
+class PlanSubscriptionUsage extends PlanSubscriptionUsageModel {
+    //
+}
+```
+
+## StripteCustomerModel
+```php
+<?php
+namespace App\Models;
+use Rennokki\Plans\Models\StripteCustomerModel;
+class StripeCustomer extends StripteCustomerModel {
+    //
+}
+```
+
 # Events
 When using subscription plans, you want to listen for events to automatically run code that might do changes for your app.
 
