@@ -1,5 +1,5 @@
 {
-    "name": "iProp/plans",
+    "name": "interactively/plans",
     "description": "Laravel Plans is a package for SaaS apps that need management over plans, features, subscriptions, events for plans or limited, countable features.",
     "keywords": [
         "eloquent",
