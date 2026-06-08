@@ -21,15 +21,15 @@
         }
     ],
     "require": {
-        "doctrine/dbal": "^2.8.0|^3.0",
-        "laravel/framework": "5.7.*|5.8.*|^6.0|^7.0|^8.0|~9|~10|~11|~12",
+        "doctrine/dbal": "*",
+        "laravel/framework": "*",
         "stripe/stripe-php": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.2|^7.0|^8.0|^9.5",
-        "orchestra/testbench": "3.8.*|^7.0|^6.6",
-        "orchestra/database": "3.8.*|^7.0|^6.6",
-        "laravel/legacy-factories": "^1.1"
+        "phpunit/phpunit": "*",
+        "orchestra/testbench": "*",
+        "orchestra/database": "*",
+        "laravel/legacy-factories": "*"
     },
     "autoload": {
         "psr-4": {
